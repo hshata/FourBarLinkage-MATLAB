@@ -14,6 +14,7 @@ alpha = 35;
 
 theta2 = 0:2:360;
 figure(1); 
+subplot(2,3,1)
 for i = 1:length(theta2)
     
   if theta2(i) > 360
@@ -80,25 +81,25 @@ for i = 1:length(theta2)
     
 end
 
-figure(2)
+subplot(2,3,2)
 plot(theta2, om2,'LineWidth',2)
 title('Angular Velocity of \theta_3')
 xlabel('\theta_2')
 ylabel('Joint AB')
 
-figure(3)
+subplot(2,3,3)
 plot(theta2, om4,'LineWidth',2)
 title('Angular Velocity of \theta_4')
 xlabel('\theta_2')
 ylabel('Joint AB')
 
-figure(4)
+subplot(2,3,4)
 plot(theta2,  V_Px,'LineWidth',2)
 title('x-component velocity of P')
 xlabel('\theta_2')
 ylabel('Velocity of Point P')
 
-figure(5)
+subplot(2,3,5)
 plot(theta2,  V_Py,'LineWidth',2)
 title('y-component velocity of P')
 xlabel('\theta_2')
